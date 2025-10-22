@@ -1,6 +1,5 @@
 FROM node:22
 WORKDIR /app
-RUN ls
 COPY package.json ./
 RUN npm install
 COPY . .
