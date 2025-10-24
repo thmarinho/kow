@@ -6,4 +6,4 @@ RUN npm install
 COPY ./frontend .
 
 EXPOSE 8081
-CMD run run web
+CMD npm run web
