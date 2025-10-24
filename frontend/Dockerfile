@@ -1,7 +1,7 @@
 # build environment
 FROM node:alpine as builder
 WORKDIR /app
-COPY package.json ./
+COPY ./frontend/package.json ./
 RUN npm install
 COPY ./frontend .
 
