@@ -49,7 +49,7 @@ const RecipePage = () => {
         <p className="mt-1 text-sm text-gray-500">{recipe.description}</p>
       </div>
 
-      <Accordion label="Ingrédients" initialOpen={true}>
+      <Accordion label={`Ingrédients (${recipe.servings} parts)`} initialOpen={true}>
         <ul className="list-disc pl-5">
           {recipe.ingredients.map(ingredient => (
             <li key={ingredient.id}>
