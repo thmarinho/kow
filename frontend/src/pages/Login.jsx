@@ -1,6 +1,6 @@
 import { useForm } from "react-hook-form";
 import Input from "../components/Input";
-import Button from "../components/button";
+import Button from "../components/Button";
 import PageLayout from "./_layout";
 import axiosInstance from "../utils/axiosInstance";
 import { useUser } from "../contexts/AuthContext";
