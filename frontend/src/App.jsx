@@ -3,6 +3,7 @@ import AuthProvider, { useUser } from "./contexts/AuthContext";
 import LoginPage from "./pages/Login";
 import { Toaster } from "react-hot-toast";
 import HomePage from "./pages/Home";
+import RecipePage from "./pages/RecipePage";
 
 const ProtectedRoutes = ({}) => {
   const { loggedIn } = useUser();
@@ -15,19 +16,20 @@ function App() {
   return (
     <div className="h-full flex flex-col">
       <AuthProvider>
-        <header>aze</header>
+        {/* <header>aze</header> */}
         <main className="flex-1 bg-gray-50">
           <BrowserRouter>
             <Routes>
               <Route path="/login" element={<LoginPage />} />
               <Route element={<ProtectedRoutes />}>
                 <Route path="/" index element={<HomePage />} />
+                <Route path="/recipe/:id" element={<RecipePage />} />
               </Route>
             </Routes>
           </BrowserRouter>
         </main>
       </AuthProvider>
-      <footer>aze</footer>
+      {/* <footer>aze</footer> */}
       <Toaster />
     </div>
   );
