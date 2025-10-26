@@ -1,9 +1,9 @@
 # build environment
 FROM node:alpine as builder
 WORKDIR /app
-COPY package.json ./
+COPY ./frontend/package.json ./
 RUN npm install
-COPY . .
+COPY ./frontend/ .
 RUN npm run build
 
 RUN npm i -g serve
