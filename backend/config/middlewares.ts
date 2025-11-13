@@ -4,7 +4,7 @@ export default [
   'strapi::security',
   {
     name: "strapi::cors",
-    origin: ['http://localhost:4321'],
+    origin: ['http://0.0.0.0:4321'],
     headers: '*',
   },
   'strapi::cors',
