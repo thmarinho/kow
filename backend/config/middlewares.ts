@@ -7,7 +7,6 @@ export default [
     origin: ['http://0.0.0.0:4321'],
     headers: '*',
   },
-  'strapi::cors',
   'strapi::poweredBy',
   'strapi::query',
   'strapi::body',
