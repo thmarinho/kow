@@ -5,6 +5,10 @@ export default (config: UserConfig) => {
   return mergeConfig(config, {
     server: {
         allowedHosts: true,
+	cors: {
+        	origin: ['http://localhost:4321'],
+        	credentials: true,
+      	},
     },
     resolve: {
       alias: {
