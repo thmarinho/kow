@@ -1,1 +1,5 @@
-export default () => ({});
+export default () => ({
+	'random-sort' : {
+		enable: true,
+	},
+});
